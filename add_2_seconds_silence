@@ -1,0 +1,9 @@
+tell application "System Events" to tell process "Audacity"
+	set frontmost to true
+	set classNames to {}
+	click (menu item 1 where its name starts with "Silence") of menu 1 of menu bar item "Generate" of menu bar 1
+	keystroke tab
+	keystroke tab
+	keystroke "2"
+	click UI element "Generate" of window "Silence"
+end tell
